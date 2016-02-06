@@ -1,8 +1,8 @@
 {
   "name": "trailing-semicolon",
   "displayName": "Trailing Semicolon",
-  "description": "Provides with the command to append semicolon to the end of current line.",
-  "version": "1.0.1",
+  "description": "Provides the command to append semicolon to the end of current line.",
+  "version": "1.0.2",
   "publisher": "naumovs",
   "engines": {
     "vscode": "^0.10.1"
