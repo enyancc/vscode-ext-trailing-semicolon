@@ -1,0 +1,48 @@
+{
+  "name": "trailing-semicolon",
+  "displayName": "Trailing Semicolon",
+  "description": "Provides with the command to append semicolon to the end of current line.",
+  "version": "1.0.0",
+  "publisher": "naumovs",
+  "engines": {
+    "vscode": "^0.10.1"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:extension.trailing-semicolon"
+  ],
+  "scripts": {
+    "vscode:prepublish": "node ./node_modules/webpack/bin/webpack.js",
+    "compile": "node ./node_modules/webpack/bin/webpack.js -w"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/naumovs/vscode-ext-trailing-semicolon/issues"
+  },
+  "homepage": "https://github.com/naumovs/vscode-ext-trailing-semicolon",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/naumovs/vscode-ext-trailing-semicolon.git"
+  },
+  "main": "./dist/extension",
+  "icon": "images/preview.png",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.trailing-semicolon",
+        "title": "Trailing Semicolon"
+      }
+    ],
+    "keybindings": [{
+      "key": "cmd+;",
+      "when": "editorTextFocus",
+      "command": "extension.trailing-semicolon"
+    }]
+  },
+  "devDependencies": {
+    "vscode": "0.10.x",
+    "webpack": "^1.12.12"
+  }
+}
