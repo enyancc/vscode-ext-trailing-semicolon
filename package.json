@@ -36,7 +36,8 @@
       }
     ],
     "keybindings": [{
-      "key": "cmd+;",
+      "key": "ctrl+;",
+      "mac": "cmd+;",
       "when": "editorTextFocus",
       "command": "extension.trailing-semicolon"
     }]
