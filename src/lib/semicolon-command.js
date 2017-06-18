@@ -14,5 +14,6 @@ function semicolonCommand (textEditor, textEditorEdit) {
     ));
   } else {
     textEditorEdit.insert(line.range.end, ';');
+    vscode.commands.executeCommand('cursorMove', { 'to': 'wrappedLineEnd'});
   }
 }
